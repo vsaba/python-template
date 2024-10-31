@@ -1,0 +1,1 @@
+Template structure for a future python project.
