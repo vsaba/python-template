@@ -1,16 +1,16 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v5.0.0
     hooks:
     -   id: check-yaml
     -   id: check-added-large-files
 -   repo: https://github.com/psf/black
-    rev: 24.8.0
+    rev: 24.10.0
     hooks:
     -   id: black
         args: [--config=pyproject.toml]
 -   repo: https://github.com/pycqa/isort
-    rev: 5.12.0
+    rev: 5.13.2
     hooks:
       - id: isort
         name: isort (python)
@@ -19,3 +19,12 @@ repos:
     hooks:
     -   id: mypy
         args: [--strict, --ignore-missing-imports]
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.1.1
+    hooks:
+    -   id: flake8
+# -   repo: https://github.com/PyCQA/docformatter
+#     rev: v1.7.5
+#     hooks:
+#     -   id: docformatter
+#         args: [--in-place --config pyproject.toml]
