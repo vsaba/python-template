@@ -1,0 +1,54 @@
+# Ignore Python bytecode files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+.venv/
+env/
+venv/
+ENV/
+.venv.bak/
+
+# Ignore IDE/editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python packaging artifacts
+*.egg-info/
+.eggs/
+dist/
+build/
+*.bak
+*.log
+
+# Ignore test and coverage files
+*.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Ignore git directories and files
+.git/
+.gitignore
+.gitattributes
+
+# Ignore Dockerfile or any other scripts used for local development
+Dockerfile*
+docker-compose.yml
+Makefile
+
+# Ignore configuration files that may contain sensitive data
+*.env
+*.env.local
+*.env.*.local
+*.secrets
